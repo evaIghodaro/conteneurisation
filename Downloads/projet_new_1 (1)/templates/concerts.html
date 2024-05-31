@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{.Title}}</title>
+    <link rel="stylesheet" href="/static/css/artist.css">
+</head>
+<body>
+    <div class="nav-content">
+        <h1 class="text-animate">
+            <a href="" class="typewrite" data-period="2000" data-type='[ "La musique est la langue des émotions.", "La musique est le refuge des âmes ulcérées par le bonheur..", "La vie sans musique est tout simplement une erreur, une fatigue, un exil.", "Si on veut connaître un peuple, il faut écouter sa musique." ]'>
+                <img src="{{.Image}}" alt="{{.Image}}" style="display: block; margin: auto;" class="profile-image">
+            </a>
+        </h1>
+        <h2 style="margin-left: 50%;margin-top: 13%;color: white; font-size: 48px; font-weight: bold">{{.Name}}</h2>
+
+    </div>
+    <h1 class="title_artist">Planning des concerts disponibles</h1>
+    <ul>
+        {{range .Concerts}}
+            <li>
+                 <p style="font-weight:600">Ville : {{.City}}</p>
+                <p style="font-weight:600">Date : {{.Date}}</p>
+            </li>
+        {{end}}
+    </ul>
+</body>
+</html>
