@@ -1,0 +1,2 @@
+Les réservations sont intégrées au concept de location, et les opérations de maintenance incluent implicitement le rôle des techniciens. Les bornes de recharge sont rattachées aux stations dans cette version du modèle
+La conception repose sur la méthode MERISE. Certaines entités du sujet (réservation, technicien, borne) ont été intégrées fonctionnellement afin de conserver un modèle simple et cohérent.
